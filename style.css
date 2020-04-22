@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+.popup{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    max-height: 500px;
+    border: 3px solid green;
+    z-index: 1000;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boldHeader {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1em;
+    justify-self: flex-start;
+    text-align: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    font-size: 1em;
+}
+
+.btn{
+    width: 70%;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    background: #5e8d00;
+}
+
+.btn:hover {
+    background: #4d7400;
+}
+
+.four {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;  
+    }
+.five {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;  
+    }
+.six {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+
+.grid-item-found{
+    opacity: 0;
+}
+
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.grid-item-reverse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #154174;
+    border-radius: 15px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.grid-item-reverse:hover{
+    background-color: #00ff00;
+}
+
+.gameInfo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 10%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+.grid-item img, .grid-item-reverse img {
+    max-width: 50%;
+    max-height: 80%;
+}
+.grid-item-reverse img {
+    z-index: -1000;
+}
+
+.grid-item img {
+    z-index: 5;
+}
